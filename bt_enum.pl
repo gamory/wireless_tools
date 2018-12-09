@@ -129,7 +129,7 @@ if ($working_data =~ /.*connect error.*/) {
     cprint("Failed to grab primary data (err counter $errors_found)\n");
 }
 else {
-    cprint("\"$working_data\"");
+    cprint("$working_data");
 }
 cprint("Grabbing available handles...\n");
 $working_cmd = "sudo gatttool $src_dev_arg -t random -b $target_dev --characteristics";
